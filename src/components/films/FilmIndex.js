@@ -4,12 +4,20 @@ import FilmCard from './FilmCard'
 
 class FilmIndex extends React.Component {
   state = {
-    films: []
+    films: [],
+    year: ''
   }
 
-  async componentDidMount() {
+  componentDidMount() {
+    const year = localStorage.getItem('year')
+    this.setState({ year }, () => {
+      this.getFilm()
+    })
+  }
+
+  async getFilm() {
     try {
-      const res = await axios.get('https://api.themoviedb.org/3/discover/movie?primary_release_year=2010&api_key=3afeb04a1fe8f1b2dc3b55f9ed835c6d')
+      const res = await axios.get(`https://api.themoviedb.org/3/discover/movie?primary_release_year=${this.state.year}&api_key=3afeb04a1fe8f1b2dc3b55f9ed835c6d`)
       this.setState({ films: res.data.results })
     } catch (err) {
       console.log(err)

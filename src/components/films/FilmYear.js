@@ -1,4 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+// class FilmYear extends React.Component {
+
+//   render() {
+//     return (
+
+// <section className="section">
+//     <div className="container">
+//       <div className="columns is-mobile is-multiline">
+//         {for (let i = 2019, i > 2010, i--) {
+//           <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+//             <div className="card">
+//               <h4 className="title">{i}</h4>
+//             </div>
+//           </div>
+//         }}
+//       </div>
+//     </div>
+//   </section>
+// )
+// }
 
 
 class FilmYear extends React.Component {
@@ -6,61 +28,32 @@ class FilmYear extends React.Component {
     year: ''
   }
 
+  handleClick = e => {
+    localStorage.setItem('year', e.target.innerHTML)
+  }
+
+  createCards = () => {
+    const years = []
+    for (let i = 2019; i >= 2010; i--) {
+      years.push(
+        <div key={i} className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile year-card">
+          <Link to="/films">
+            <div className="card year">
+              <h4 onClick={this.handleClick} className="title has-text-white is-1">{i}</h4>
+            </div>
+          </Link>
+        </div>
+      )
+    }
+    return years
+  }
+
   render() {
     return (
       <section className="section">
         <div className="container">
-          <div className="columns is-mobile is-multiline">
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2010</h4>
-              </div>
-            </div>
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2011</h4>
-              </div>
-            </div>
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2012</h4>
-              </div>
-            </div>
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2013</h4>
-              </div>
-            </div>
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2014</h4>
-              </div>
-            </div>
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2015</h4>
-              </div>
-            </div>
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2016</h4>
-              </div>
-            </div>
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2017</h4>
-              </div>
-            </div>
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2018</h4>
-              </div>
-            </div>
-            <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-              <div className="card">
-                <h4 className="title">2019</h4>
-              </div>
-            </div>
+          <div className="columns is-mobile is-multiline year-page">
+            {this.createCards()}
           </div>
         </div>
       </section>

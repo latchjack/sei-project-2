@@ -6,19 +6,19 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-warning">
+      <nav className="navbar">
         <div className="container">
           <div className="navbar-brand">
-            <Link className="navbar-item" to="/">Good Films Only 📽️</Link>
+            <Link className="navbar-item has-text-white title" to="/">
+              <div className="logo">
+              <p className="title">20</p>
+              </div>
+              TopTwenty</Link>
           </div>
-          <div className="navbar-menu">
             <div className="navbar-end">
-              <Link className="navbar-item" to="/films">Films</Link>
-
-              
+              <Link className="navbar-item has-text-white title is-4" to="/years">Films</Link>
             </div>
           </div>
-        </div>
       </nav>
     )
   }
