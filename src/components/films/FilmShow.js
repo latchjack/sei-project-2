@@ -31,10 +31,10 @@ class FilmShow extends React.Component {
       <section className="section">
         <div className="container">
           <div className="columns">
-            <div className="column is-half">
+            <div className="column is-half-desktop">
               <img className="show-image" src={`https://image.tmdb.org/t/p/w300_and_h450_bestv2/${poster_path}`} alt={title} />
             </div>
-            <div className="column is-half second">
+            <div className="column is-half-desktop is-full-tablet is-full-mobile second">
               <div className="divide">
                 <h2 className="title has-text-white is-2 show-title">{title}</h2>
                 <div className="score">

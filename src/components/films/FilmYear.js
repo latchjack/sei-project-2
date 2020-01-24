@@ -1,28 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// class FilmYear extends React.Component {
-
-//   render() {
-//     return (
-
-// <section className="section">
-//     <div className="container">
-//       <div className="columns is-mobile is-multiline">
-//         {for (let i = 2019, i > 2010, i--) {
-//           <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-//             <div className="card">
-//               <h4 className="title">{i}</h4>
-//             </div>
-//           </div>
-//         }}
-//       </div>
-//     </div>
-//   </section>
-// )
-// }
-
-
 class FilmYear extends React.Component {
   state = {
     year: ''

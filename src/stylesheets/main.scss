@@ -1,20 +1,28 @@
 $mustard: #FCC927;
-
-.hero {
-  background-image: url('../assets/shutterstock_384996514.jpg');
-  background-size: cover;
-}
+$newRed: rgb(255, 0, 64);
+$newShadow: 1px 1px 2px grey, 0 0 1em black, 0 0 1em black;
 
 body {
   background-color: black;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   min-height: 100vh;
+  min-width: 100vw;
 
 }
 
+.hero {
+  width: 100vw;
+  background-image: url('../assets/homepage.jpg');
+  background-size: cover;
+}
+
 .navbar {
-  background-color: rgb(255, 0, 64);
+  background-color: $newRed;
+}
+
+.navbar-end .title {
+  margin-bottom: 0;
 }
 
 .second {
@@ -28,13 +36,13 @@ body {
 }
 
 .logo {
-  background-color: white;
-  border-radius: 100%;
-  padding: 5px;
-}
+   background-color: white;
+   border-radius: 100%;
+   padding: 5px;
+ }
 
 .logo p {
-  color: rgb(255, 0, 64);
+  color: $newRed;
 }
 
 .card {
@@ -48,22 +56,31 @@ body {
 .card-content, .film-header {
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
+  
 }
 
 .card-header-title {
   height: 75px;
   color: white;
+  text-shadow: $newShadow;
   justify-content: center;
 }
 
 .card-content h5 {
   color: white;
+  text-shadow: $newShadow;
 }
 
 .year-page {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+}
+
+.genre-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 .year {
@@ -73,6 +90,8 @@ body {
   border-radius: 30px;
   h4 {
     padding: 50px;
+    text-align: center;
+    text-shadow: $newShadow;
   }
 }
 
@@ -80,15 +99,35 @@ body {
   height: 200px;
 }
 
-.main-logo {
-  
+.main-header {
+  display: flex;
+  justify-content: center;
+  p {
+  color: $newRed;
+  }
+
 }
+
+.main-logo {
+  background-color: $newRed;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  p {
+    color: white;
+  }
+}
+
 
 .genres {
   display: flex;
   justify-content: space-evenly;
   border: 1px solid $mustard;
   padding: 10px;
+ 
 }
 
 .genre {
@@ -161,19 +200,8 @@ body {
   width: 600px;
 }
 
-.main-header {
-  display: flex;
-  justify-content: center;
-  p {
-    color: rgb(255, 0, 64);
-  }
-}
-.main-logo {
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-}
+
+
+
+
+
