@@ -1,5 +1,10 @@
 $mustard: #FCC927;
 
+.hero {
+  background-image: url('https://www.verdict.co.uk/wp-content/uploads/2017/10/shutterstock_384996514.jpg');
+  background-size: cover;
+}
+
 body {
   background-color: black;
   font-family: 'Raleway', sans-serif;
@@ -23,10 +28,10 @@ body {
 }
 
 .logo {
-   background-color: white;
-   border-radius: 100%;
-   padding: 5px;
- }
+  background-color: white;
+  border-radius: 100%;
+  padding: 5px;
+}
 
 .logo p {
   color: rgb(255, 0, 64);
@@ -48,6 +53,7 @@ body {
 .card-header-title {
   height: 75px;
   color: white;
+  justify-content: center;
 }
 
 .card-content h5 {
@@ -83,7 +89,6 @@ body {
   justify-content: space-evenly;
   border: 1px solid $mustard;
   padding: 10px;
- 
 }
 
 .genre {
@@ -156,8 +161,19 @@ body {
   width: 600px;
 }
 
-
-
-
-
-
+.main-header {
+  display: flex;
+  justify-content: center;
+  p {
+    color: rgb(255, 0, 64);
+  }
+}
+.main-logo {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
