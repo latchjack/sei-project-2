@@ -21,20 +21,23 @@ class FilmGenre extends React.Component {
   }
 
   render() {
-    console.log(this.state.genres)
     return (
       <section className="section">
         <div className="container">
           <div className="columns is-mobile is-multiline genre-page">
-            {this.state.genres.map(genre => (
-              <div key={genre.id} className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile year-card">
-                <Link to="/filmsbygenre">
-                  <div className="card year">
-                    <h4 onClick={this.handleClick} title={genre.id} className="title has-text-white is-3">{genre.name}</h4>
+            {this.state.genres.map(genre => {
+              if (genre.id !== 99) {
+                return (
+                  <div key={genre.id} className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile year-card">
+                    <Link to="/filmsbygenre">
+                      <div className="card year">
+                        <h4 onClick={this.handleClick} title={genre.id} className="title has-text-white is-3">{genre.name}</h4>
+                      </div>
+                    </Link>
                   </div>
-                </Link>
-              </div>
-            ))}
+                )
+              }
+            })}
           </div>
         </div>
       </section>

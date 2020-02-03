@@ -3,18 +3,18 @@ $newRed: rgb(255, 0, 64);
 $newShadow: 1px 1px 2px grey, 0 0 1em black, 0 0 1em black;
 
 body {
-  background-color: black;
+  // background-color: black;
+  background-color: rgb(26, 24, 27);
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   min-height: 100vh;
   min-width: 100vw;
-
 }
 
 .hero {
   width: 100vw;
-  background-image: url('../assets/homepage.jpg');
-  background-size: cover;
+  background-image: url('../assets/giphy.gif');
+  background-size: 820px;
 }
 
 .navbar {
