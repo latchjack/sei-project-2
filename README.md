@@ -159,8 +159,6 @@ Below is an example of the data that was returned from the API for an individual
 
 Using React and Bulma we were able to customise how the data was laid out on the page to make it easy to read and visually appealing.
 
-![A picture of the film's Show page](readmefiles/filmshow3.png)
-
 ## Screenshots
 
 Year select page
