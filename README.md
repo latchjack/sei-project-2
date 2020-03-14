@@ -45,7 +45,7 @@ Mobile Wireframes
 ![Wireframes](readmefiles/wireframes/homepage_mobile.png)
 ![Wireframes](readmefiles/wireframes/yearpage_mobile.png)
 
-To see the other wireframes made for the project you can click [here]() to access their folder in the repository.
+To see the other wireframes made for the project you can click [here](https://github.com/latchjack/sei-project-2/tree/master/readmefiles/wireframes "wireframe repo link") to access their folder in the repository.
 
 ## Approach
 When we started to plan the site we decided we wanted to build a clean site that would be easy to navigate. We wanted to have a landing page, a page to browse through the index and page which would hold more information on each individual item.
