@@ -2,7 +2,7 @@
 # Software Engineering Immersive: Project 2
 This was my second project built whilst studying the Software Engineering Immersive course at General Assembly.
 
-This application was built in only 48 hours during Week 6 of the course, alongside of [Emily Summers]().
+This application was built in only 48 hours during Week 6 of the course, alongside of [Emily Summers](https://github.com/EmilySummers).
 
 # TopTwenty
 
@@ -180,6 +180,15 @@ The main challenges we had on this project were...
 ### Improvements
 The improvements I would like to make to the project would be...
 1. I would love to add a new feature to group films by their age ratings, however the API doesn't seem to have this information stored. I would have to utilise another API that does keep a record of the age ratings.
+
+### Wins
+In the planning phase of the project we knew we wanted to create a beautiful website that was easy for users to navigate around. We wanted multiple pages, including an index and many _show_ pages.
+
+We also wanted to find a good API that provided a lot of data and put as much as possible to use. After finding the TMDB API we found that we had a lot of useful information that we could display for the user.
+
+We had also just recently started learning about React.js so I think we did well to show we understood the concepts of state and using external APIs. 
+
+___
 
 #### Author
 Latch Jack - You can contact me via [Twitter](https://twitter.com/LatchCodes "My twitter profile") or via [email](mailto:latch.jack@gmail.com "my email").
