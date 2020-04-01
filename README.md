@@ -181,12 +181,22 @@ The main challenges we had on this project were...
 The improvements I would like to make to the project would be...
 1. I would love to add a new feature to group films by their age ratings, however the API doesn't seem to have this information stored. I would have to utilise another API that does keep a record of the age ratings.
 
+## Wins & Key Learnings
 ### Wins
 In the planning phase of the project we knew we wanted to create a beautiful website that was easy for users to navigate around. We wanted multiple pages, including an index and many _show_ pages.
 
 We also wanted to find a good API that provided a lot of data and put as much as possible to use. After finding the TMDB API we found that we had a lot of useful information that we could display for the user.
 
 We had also just recently started learning about React.js so I think we did well to show we understood the concepts of state and using external APIs. 
+
+### Key Learnings
+The key knowledge I gained from completing this project was...
+
++ Using React.js.
++ Sass and Bulma.
++ Utilising external API data and API keys.
++ Insomnia.
+
 
 ___
 
